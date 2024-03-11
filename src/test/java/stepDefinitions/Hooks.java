@@ -18,7 +18,7 @@ public class Hooks extends CommonPage {
     @Before
     public void setup() {
         PropertiesFile.setPropertiesFile();
-        WebDriver driver = ThreadGuard.protect(new TargetFactory().createInstance(String.valueOf(EDGE)));
+        WebDriver driver = ThreadGuard.protect(new TargetFactory().createInstance(String.valueOf(CHROME)));
         DriverManager.setDriver(driver);
         Browser.openURL(URL_LOGIN.getUrl());
         loginPage().loginSuccess(PropertiesFile.getPropValue("username"), PropertiesFile.getPropValue("password"));
