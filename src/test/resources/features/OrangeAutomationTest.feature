@@ -5,8 +5,8 @@ Feature: Orange Automation test
     When Navigate to view user page
     And Search by on the view user page
       | username | Alice.Duval |
-#    And Click search on the view user page
-#    Then Should see the name search below the results table
+    And Click search on the view user page
+    Then Should see the name search below the results table
 
 
 #  Scenario: Update information
