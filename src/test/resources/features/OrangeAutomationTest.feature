@@ -1,6 +1,6 @@
 Feature: Orange Automation test
 
-  @TestCaseKey=SCRUM-T2
+  @TestCaseKey=SCRUM-T1
   Scenario: Verify username successful
     When Navigate to view user page
     And Search by on the view user page
